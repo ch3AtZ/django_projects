@@ -1,4 +1,4 @@
-import axios from axios;
+import axios from 'axios';
 import { ACCESS_TOKEN } from "./constants";
 
 const api =  axios.create({
@@ -17,6 +17,5 @@ api.interceptors.request.use(
         return Promise.reject(error)
     }
 )
-
 
 export default api;
